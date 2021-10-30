@@ -2,10 +2,12 @@
 layout: base
 ---
 
-<div class="max-w-7xl py-12 mx-auto flex items-center justify-center">
-    <h1 class="text-center font-medium text-dusk text-5xl">{{title}}</h1>
-</div>
- 
-<div class="max-w-4xl px-8 mx-auto border-t-2 border-gray-200 py-6">
+<main class="p-12">
+<header class="mb-12">
+ <img src="/images/logo.png" width="180"/>
+</header>
+<div class="py-6">
 {{ content | safe }}
 </div>  
+</main>
+ 
