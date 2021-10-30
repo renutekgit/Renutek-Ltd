@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="text-dusk bg-grap-50">
+    <head>
+        <title>Renutek | {{title}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css?{% version %}" type="text/css"/>
+        <script src="https://unpkg.com/alpinejs" defer="defer"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Renutek | {{title}}"/>
+        <meta property="og:description" content="Renutek is all about reneable energy and making it a reality for everyone."/>
+        <meta property="og:url" content="/"/>
+        <meta property="og:site_name" content="Renutek"/>
+        <meta property="og:image" content="/images/logo.png"/>
+        <meta property="og:image:width" content="400"/>
+        <meta property="og:image:height" content="400"/>
+    </head>
+    <body class="font-sans font-normal">
+        {{ content | safe }}
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="nomodule" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

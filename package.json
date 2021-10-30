@@ -1,0 +1,31 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf _site src/css/main.css",
+    "build:styles": "TAILWIND_MODE=build NODE_ENV=production npx tailwindcss --postcss -i ./tailwind.css -o ./src/css/main.css",
+    "build": "npm run build:styles && npx @11ty/eleventy",
+    "dev:styles": "npx tailwindcss --postcss -i ./tailwind.css -o ./_site/css/main.css --watch",
+    "dev:build": "npx @11ty/eleventy --serve",
+    "start": "npm run clean && npm-run-all -p dev:build dev:styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/jonwardy/clycycles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "latest",
+    "@tailwindcss/jit": "latest"
+  }
+}

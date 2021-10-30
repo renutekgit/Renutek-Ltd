@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 18px; 
+    line-height: 1.625;
+}
+
+ion-icon {
+    font-size: 18px;
+}
+
+.copy {  
+    h1 {
+        @apply text-3xl font-bold mb-12;
+    }
+    h2 {
+        @apply text-2xl font-medium mb-5;
+    }
+    h3 {
+        @apply text-xl font-medium mb-4;
+    }
+    p {
+        @apply mb-6;  
+    }
+    ul { 
+        @apply list-[square] list-outside my-5 pl-[1.2rem]; 
+    }
+    li {
+        @apply py-1 pl-2;
+    } 
+    li strong {
+        @apply float-right;
+    }
+    blockquote {
+        @apply text-sm;
+    } 
+    hr {
+        @apply my-12; 
+    }
+} 
+ 
